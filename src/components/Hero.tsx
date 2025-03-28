@@ -18,7 +18,7 @@ const Hero = () => {
           <Button size="lg" className={cn("bg-restaurant-cream text-restaurant-charcoal hover:bg-restaurant-beige", "border-2 border-restaurant-cream font-medium px-8")}>
             Reserve uma Mesa
           </Button>
-          <Button variant="outline" size="lg" className="bg-gray-300 hover:bg-gray-200">
+          <Button variant="outline" size="lg" className="bg-gray-300 hover:bg-gray-200 text-left">
             Ver Cardápio
           </Button>
         </div>
