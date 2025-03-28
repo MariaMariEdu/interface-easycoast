@@ -5,12 +5,12 @@ import { cn } from '@/lib/utils';
 
 const Hero = () => {
   return (
-    <section id="home" className="hero-section overlay-dark-50 h-screen">
+    <section id="home" className="hero-section overlay-dark">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
-          backgroundPosition: "center center"
+          backgroundImage: "url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+          backgroundPosition: "center 40%"
         }}
       ></div>
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
@@ -24,8 +24,8 @@ const Hero = () => {
           <Button 
             size="lg" 
             className={cn(
-              "bg-[#E08026] text-white hover:bg-[#E08026]/90",
-              "border-2 border-[#E08026] font-medium px-8"
+              "bg-restaurant-cream text-restaurant-charcoal hover:bg-restaurant-beige",
+              "border-2 border-restaurant-cream font-medium px-8"
             )}
           >
             Reserve uma Mesa
