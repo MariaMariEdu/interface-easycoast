@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className={cn(
       "fixed w-full px-6 md:px-10 py-4 transition-all duration-300 z-50",
-      scrolled ? "bg-restaurant-orange shadow-md" : "bg-black/50 backdrop-blur-sm"
+      scrolled ? "bg-restaurant-orange shadow-md" : "bg-transparent"
     )}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
