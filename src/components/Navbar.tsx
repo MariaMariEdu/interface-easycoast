@@ -40,9 +40,7 @@ const Navbar = () => {
   return <nav className={cn("fixed w-full px-6 md:px-10 py-4 transition-all duration-300 z-50", scrolled ? "bg-restaurant-cream shadow-md" : "bg-transparent")}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#home" className="text-2xl md:text-3xl font-playfair font-semibold text-restaurant-brown">
-            Terra & Mesa
-          </a>
+          <a href="#home" className="text-2xl md:text-3xl font-playfair font-semibold text-restaurant-White">Terra & Mesa</a>
         </div>
 
         {/* Links para desktop */}
