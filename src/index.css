@@ -81,12 +81,17 @@
   .overlay-dark {
     @apply before:content-[''] before:absolute before:inset-0 before:bg-black/40 before:z-10;
   }
+  
+  .overlay-dark-50 {
+    @apply before:content-[''] before:absolute before:inset-0 before:bg-black/50 before:z-10;
+  }
 
   .menu-item {
     @apply flex flex-col md:flex-row justify-between items-start md:items-center gap-4 p-4 border-b border-restaurant-beige;
   }
 
   .menu-item-price {
-    @apply text-xl font-playfair font-medium text-restaurant-brown whitespace-nowrap;
+    @apply text-xl font-playfair font-medium text-restaurant-orange whitespace-nowrap;
   }
 }
+
