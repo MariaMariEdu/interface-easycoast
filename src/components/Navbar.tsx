@@ -36,7 +36,10 @@ const Navbar = () => {
     )}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#home" className="text-2xl md:text-3xl font-playfair font-semibold text-white">
+          <a href="#home" className={cn(
+            "text-2xl md:text-3xl font-playfair font-semibold",
+            scrolled ? "text-white" : "text-white"
+          )}>
             Terra & Mesa
           </a>
         </div>
@@ -47,7 +50,10 @@ const Navbar = () => {
             <a 
               key={item.name}
               href={item.url}
-              className="flex items-center space-x-2 text-white hover:text-restaurant-cream transition-colors"
+              className={cn(
+                "flex items-center space-x-2 transition-colors",
+                scrolled ? "text-white hover:text-restaurant-cream" : "text-white hover:text-restaurant-cream"
+              )}
             >
               <span>{item.name}</span>
             </a>
@@ -56,7 +62,7 @@ const Navbar = () => {
 
         {/* Menu mobile */}
         <div className="md:hidden flex items-center">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+          <button onClick={() => setIsOpen(!isOpen)} className={scrolled ? "text-white" : "text-white"}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
