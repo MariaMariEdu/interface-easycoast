@@ -16,19 +16,19 @@ const Events = () => {
     },
     {
       id: 2,
-      title: "Workshop de Culinária",
-      description: "Aprenda a preparar pratos tradicionais da nossa região com o Chef Paulo Mendonça.",
+      title: "Festival Gastronômico",
+      description: "Um dia inteiro dedicado à gastronomia regional com pratos especiais preparados pelo Chef Paulo Mendonça.",
       date: "25 de Novembro",
-      capacity: "15 pessoas",
-      image: "https://images.unsplash.com/photo-1556910103-1c02745adc8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      capacity: "50 pessoas",
+      image: "https://images.unsplash.com/photo-1555244162-803834f25e6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
       id: 3,
-      title: "Jantar com Música ao Vivo",
-      description: "Uma noite especial com músicos locais e um menu degustação exclusivo.",
+      title: "Noite de Piano",
+      description: "Uma noite especial com piano ao vivo e um menu degustação exclusivo preparado pelo nosso chef.",
       date: "10 de Dezembro",
       capacity: "50 pessoas",
-      image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      image: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     }
   ];
 
@@ -36,7 +36,7 @@ const Events = () => {
     <section id="events" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-restaurant-brown mb-4">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-restaurant-orange mb-4">
             Nossos Eventos
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-restaurant-charcoal/80">
@@ -49,7 +49,7 @@ const Events = () => {
             <div 
               key={event.id} 
               className={cn(
-                "bg-restaurant-cream border border-restaurant-beige rounded-lg overflow-hidden",
+                "bg-white border border-restaurant-beige rounded-lg overflow-hidden",
                 "flex flex-col transition-transform hover:shadow-lg hover:-translate-y-1"
               )}
             >
@@ -61,7 +61,7 @@ const Events = () => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-playfair font-semibold text-restaurant-brown mb-3">
+                <h3 className="text-xl font-playfair font-semibold text-restaurant-orange mb-3">
                   {event.title}
                 </h3>
                 <p className="text-restaurant-charcoal/80 mb-4 flex-1">
@@ -78,8 +78,7 @@ const Events = () => {
                   </div>
                 </div>
                 <Button
-                  variant="outline"
-                  className="mt-4 border-restaurant-olive text-restaurant-olive hover:bg-restaurant-olive hover:text-white"
+                  className="mt-4 bg-restaurant-orange text-white hover:bg-restaurant-orange/90 border-none"
                 >
                   Reservar
                 </Button>
@@ -92,7 +91,7 @@ const Events = () => {
           <Button 
             size="lg" 
             className={cn(
-              "bg-restaurant-brown text-white hover:bg-restaurant-brown/90",
+              "bg-restaurant-orange text-white hover:bg-restaurant-orange/90",
               "font-medium px-8"
             )}
           >
