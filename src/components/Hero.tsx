@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const Hero = () => {
   return (
-    <section id="home" className="hero-section overlay-dark-50">
+    <section id="home" className="hero-section overlay-dark-50 h-screen">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
@@ -24,8 +24,8 @@ const Hero = () => {
           <Button 
             size="lg" 
             className={cn(
-              "bg-restaurant-orange text-white hover:bg-restaurant-orange/90",
-              "border-2 border-restaurant-orange font-medium px-8"
+              "bg-[#E08026] text-white hover:bg-[#E08026]/90",
+              "border-2 border-[#E08026] font-medium px-8"
             )}
           >
             Reserve uma Mesa
