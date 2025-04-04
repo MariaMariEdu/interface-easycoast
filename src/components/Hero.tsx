@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+
 const Hero = () => {
   return <section id="home" className="hero-section overlay-dark">
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
@@ -20,4 +22,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
