@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, Book, ChefHat, Calendar, Contact } from 'lucide-react';
+import { Menu, X, Home, Book, ChefHat, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
@@ -26,7 +26,6 @@ const Navbar = () => {
     { name: "Quem Somos", icon: <Book size={18} />, url: "#about" },
     { name: "Cardápio", icon: <ChefHat size={18} />, url: "#menu" },
     { name: "Eventos", icon: <Calendar size={18} />, url: "#events" },
-    { name: "Contato", icon: <Contact size={18} />, url: "#contact" },
   ];
 
   return (
@@ -35,15 +34,29 @@ const Navbar = () => {
       scrolled ? "bg-restaurant-brown shadow-md" : "bg-transparent"
     )}>
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <a href="#home" className="text-2xl md:text-3xl font-playfair font-semibold text-restaurant-cream">
+        {/* Links desktop à esquerda */}
+        <div className="hidden md:flex items-center space-x-8">
+          {navItems.slice(0, 2).map((item) => (
+            <a 
+              key={item.name}
+              href={item.url}
+              className="flex items-center space-x-2 text-white hover:text-restaurant-cream transition-colors font-medium"
+            >
+              <span>{item.name}</span>
+            </a>
+          ))}
+        </div>
+
+        {/* Logo centralizado */}
+        <div className="flex items-center justify-center flex-grow md:flex-grow-0">
+          <a href="#home" className="text-2xl md:text-3xl font-playfair font-semibold text-restaurant-beige">
             Terra & Mesa
           </a>
         </div>
 
-        {/* Links para desktop */}
+        {/* Links desktop à direita */}
         <div className="hidden md:flex items-center space-x-8">
-          {navItems.map((item) => (
+          {navItems.slice(2).map((item) => (
             <a 
               key={item.name}
               href={item.url}
