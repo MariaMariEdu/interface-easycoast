@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils';
 const Hero = () => {
   return <section id="home" className="hero-section overlay-dark">
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
-      backgroundPosition: "center 40%"
+      backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+      backgroundPosition: "center"
     }}></div>
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-4 drop-shadow-lg">
