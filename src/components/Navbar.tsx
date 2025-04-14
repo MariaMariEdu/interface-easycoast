@@ -22,10 +22,10 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: "Home", icon: <Home size={18} />, url: "#home" },
-    { name: "Quem Somos", icon: <Book size={18} />, url: "#about" },
-    { name: "Cardápio", icon: <ChefHat size={18} />, url: "#menu" },
-    { name: "Eventos", icon: <Calendar size={18} />, url: "#events" },
+    { name: "Home", icon: <Home size={18} />, url: "/" },
+    { name: "Quem Somos", icon: <Book size={18} />, url: "/#about" },
+    { name: "Cardápio", icon: <ChefHat size={18} />, url: "/menu" },
+    { name: "Eventos", icon: <Calendar size={18} />, url: "/#events" },
   ];
 
   return (
@@ -37,33 +37,33 @@ const Navbar = () => {
         {/* Links desktop à esquerda */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.slice(0, 2).map((item) => (
-            <a 
+            <Link 
               key={item.name}
-              href={item.url}
+              to={item.url}
               className="flex items-center space-x-2 text-white hover:text-restaurant-cream transition-colors font-medium"
             >
               <span>{item.name}</span>
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* Logo centralizado */}
-        <div className="flex items-center justify-center flex-grow md:flex-grow-0">
-          <a href="#home" className="text-2xl md:text-3xl font-playfair font-semibold text-restaurant-beige">
+        <Link to="/" className="flex items-center justify-center flex-grow md:flex-grow-0">
+          <span className="text-2xl md:text-3xl font-playfair font-semibold text-restaurant-beige">
             Terra & Mesa
-          </a>
-        </div>
+          </span>
+        </Link>
 
         {/* Links desktop à direita */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.slice(2).map((item) => (
-            <a 
+            <Link 
               key={item.name}
-              href={item.url}
+              to={item.url}
               className="flex items-center space-x-2 text-white hover:text-restaurant-cream transition-colors font-medium"
             >
               <span>{item.name}</span>
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -79,15 +79,15 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-restaurant-brown shadow-lg py-4 px-6 z-50 animate-fade-in">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.url}
+              to={item.url}
               className="flex items-center py-3 space-x-3 text-white hover:text-restaurant-cream"
               onClick={() => setIsOpen(false)}
             >
               {item.icon}
               <span>{item.name}</span>
-            </a>
+            </Link>
           ))}
         </div>
       )}
