@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Home, Book, ChefHat, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -25,7 +24,7 @@ const Navbar = () => {
     { name: "Home", icon: <Home size={18} />, url: "/" },
     { name: "Quem Somos", icon: <Book size={18} />, url: "/#about" },
     { name: "Cardápio", icon: <ChefHat size={18} />, url: "/menu" },
-    { name: "Eventos", icon: <Calendar size={18} />, url: "/#events" },
+    { name: "Eventos", icon: <Calendar size={18} />, url: "/eventos" },
   ];
 
   return (
