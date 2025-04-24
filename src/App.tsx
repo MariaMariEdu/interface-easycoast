@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import MenuPage from "./pages/MenuPage";
 import EventsPage from "./pages/EventsPage";
+import ReservationPage from "./pages/ReservationPage"; // Add import for ReservationPage
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
