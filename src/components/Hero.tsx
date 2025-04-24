@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Hero = () => {
@@ -14,10 +15,14 @@ const Hero = () => {
           Tradição & Sofisticação
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 drop-shadow-md max-w-2xl mx-auto">
-      </p>
+          Uma jornada gastronômica onde cada prato conta uma história
+        </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          
-          
+          <Link to="/reserva">
+            <Button size="sm" variant="default" className="bg-restaurant-cream text-restaurant-brown hover:bg-restaurant-cream/90">
+              Reservar Mesa
+            </Button>
+          </Link>
         </div>
       </div>
     </section>;
