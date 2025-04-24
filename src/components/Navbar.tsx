@@ -90,6 +90,14 @@ const Navbar = () => {
           ))}
         </div>
       )}
+
+      {/* Add Reservation Button */}
+      <Link 
+        to="/reserva"
+        className="hidden md:block ml-4 px-4 py-2 bg-restaurant-cream text-restaurant-brown rounded-md hover:bg-restaurant-cream/90 transition-colors"
+      >
+        Reservar Mesa
+      </Link>
     </nav>
   );
 };
