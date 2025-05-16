@@ -33,7 +33,7 @@ const Navbar = () => {
     icon: <Calendar size={18} />,
     url: "/eventos"
   }];
-  return <nav className={cn("fixed w-full px-6 md:px-10 py-4 transition-all duration-300 z-50", scrolled ? "bg-restaurant-brown shadow-md" : "bg-transparent")}>
+  return <nav className="bg-[#4f082d]">
       <div className="container mx-auto flex justify-between items-center">
         {/* Links desktop à esquerda */}
         <div className="hidden md:flex items-center space-x-8">

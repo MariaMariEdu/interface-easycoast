@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-
 const Hero = () => {
   return <section id="home" className="hero-section overlay-dark">
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
@@ -19,7 +17,7 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link to="/reserva">
-            <Button size="sm" variant="default" className="bg-restaurant-cream text-restaurant-brown hover:bg-restaurant-cream/90">
+            <Button size="sm" variant="default" className="bg-restaurant-cream hover:bg-restaurant-cream/90 text-[#5e001c]">
               Reservar Mesa
             </Button>
           </Link>
@@ -27,5 +25,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;
