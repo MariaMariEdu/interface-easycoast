@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-restaurant-brown mb-6 relative">
-              <span className="relative z-10">Contato</span>
+              <span className="relative z-10 text-[#4f082d]">Contato</span>
               <span className="absolute -bottom-2 left-0 w-20 h-1 bg-restaurant-olive"></span>
             </h2>
             <p className="mb-8 text-lg">
