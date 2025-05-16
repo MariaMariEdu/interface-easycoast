@@ -33,7 +33,7 @@ const Contact = () => {
                   <Mail className="text-restaurant-brown" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-restaurant-brown">Email</h3>
+                  <h3 className="text-lg font-medium text-[#4f082d]">Email</h3>
                   <p className="text-restaurant-charcoal/80">reservas@terraemesa.com.br</p>
                   <p className="text-restaurant-charcoal/80">contato@terraemesa.com.br</p>
                 </div>
